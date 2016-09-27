@@ -3,7 +3,8 @@ id_utilisateur serial,
 pseudo_utilisateur varchar(50),
 mdp_utilisateur varchar(50),
 
-constraint pk_compte primary key(id_utilisateur));
+constraint pk_compte primary key(id_utilisateur),
+constraint u_pseudo_utilisateur unique(pseudo_utilisateur));
 
 create table document(
 id_document serial,
