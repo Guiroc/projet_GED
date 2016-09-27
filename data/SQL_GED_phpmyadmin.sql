@@ -41,5 +41,3 @@ id_document int,
 constraint pk_id_consultation primary key(id_consultation),
 constraint fk_id_utilisateur foreign key(id_utilisateur) references compte(id_utilisateur),
 constraint fk_id_document foreign key(id_document) references document(id_document));
-
-TROLOLO
