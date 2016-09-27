@@ -1,5 +1,6 @@
 create table compte(
 id_utilisateur serial,
+pseudo_utilisateur varchar(50),
 mdp_utilisateur varchar(50),
 
 constraint pk_compte primary key(id_utilisateur));
