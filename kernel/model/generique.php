@@ -35,11 +35,11 @@
 			
 		}
 		
-		protected function read($val){
-			$req="SELECT * FROM {$this->table} where {$this->pk}=$val";
-			$pdo=this->connexion();
-			$sql=$pdo->prepare($req);
-			$sql->execute();
+		protected function read($id){
+			$req="SELECT * FROM {$this->table} where {$this->pk}={$id}";
+			//echo $sql;
+			$connexion=$this->connexion();
+			$sql=$connexion->query($req);
 			$res=$sql->fetch();
 		}
 		
@@ -48,11 +48,11 @@
 			
 		}
 		
-		protected function delete($val){
-			$req="DELETE FROM {$this->table} where {$this->pk}=$val";
-			$pdo=this->connexion();
-			$sql=$pdo->prepare($req);
-			$sql->execute();
+		protected function delete($id){
+			$req="DELETE FROM {$this->table} where {$this->pk}={$id}";
+			//echo $sql;
+			$connexion=$this->connexion();
+			$sql=$connexion->exec($req);
 			
 			
 		}
