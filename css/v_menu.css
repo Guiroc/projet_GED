@@ -1,0 +1,10 @@
+#menu{
+	width: 1000px;
+	height: 50px;
+	text-align: center;
+	border: solid;
+}
+#menu li{
+	display: inline-block;
+	width: 33%;
+}

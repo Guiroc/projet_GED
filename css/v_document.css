@@ -1,0 +1,36 @@
+.div1{
+	padding:5px;
+	margin-top:5px;
+	border:solid black 1px;
+	border-radius:5px;
+	background-color:white;
+	height:25px;
+	clear:left;
+}
+.colonne1{
+	height:25px;
+	float:left;
+	width:300px
+}
+.colonne2{
+	height:25px;
+	float:left;
+	width:300px
+}
+.read{
+	width:100px;
+}
+a:link{
+	color:black;
+}
+a:visited{
+	color:black;	
+}
+.div1:hover{
+	margin-left:-10px;
+	box-shadow:5px 5px 3px rgba(0,0,0,0.5);
+}
+.div1:active{
+	margin-left:-10px;
+	box-shadow:5px 5px 3px rgba(0,0,0,0.5);
+}
