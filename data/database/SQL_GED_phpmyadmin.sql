@@ -1,18 +1,15 @@
 create table compte(
-id_utilisateur serial,
-pseudo_utilisateur varchar(50),
+id_utilisateur int,
 mdp_utilisateur varchar(50),
 
-constraint pk_compte primary key(id_utilisateur),
-constraint u_pseudo_utilisateur unique(pseudo_utilisateur));
+constraint pk_compte primary key(id_utilisateur));
 
 create table document(
-id_document serial,
+id_document int,
 nom_document varchar(50),
 verrouille_document boolean,
 date_suppression date,
 date_creation date,
-chemin_acces varchar(100)
 
 id_creation int,
 id_suppression int,
@@ -22,7 +19,7 @@ constraint fk_document_id_creation foreign key(id_creation) references compte(id
 constraint fk_document_id_suppression foreign key(id_suppression) references compte(id_utilisateur));
 
 create table modification(
-id_modification serial,
+id_modification int,
 date_modification date,
 
 id_utilisateur int ,
@@ -33,7 +30,7 @@ constraint fk_id_utilisateur FOREIGN KEY (id_utilisateur) references compte (id_
 constraint fk_id_document FOREIGN KEY (id_document) references document (id_document));
 
 create table consultation(
-id_consultation serial,
+id_consultation int,
 date_consultation date,
 
 id_utilisateur int,

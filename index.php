@@ -36,5 +36,5 @@
 	
 	*/
 	
-	include("/wamp64/www/projet_GED/kernel/view/v_index.php");
+	include("/wamp64/www/projet_GED/kernel/view/layout/default/v_index.php");
 ?>

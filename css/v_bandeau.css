@@ -1,6 +1,6 @@
 #bandeau{
 	width: 1000px;
 	text-align: center;
-	border: solid;
+	border: solid 1px;
 	height: 90px;
 }
